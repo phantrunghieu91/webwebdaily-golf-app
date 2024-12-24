@@ -18,7 +18,7 @@ const handleChangeActiveItem = (index: number) => {
 </script>
 <template>
   <nav class="py-4">
-    <ul class="text-white flex justify-between text-sm">
+    <ul class="flex justify-between text-xs">
       <NavItem v-for="(item, index) in navItems" :key="index" :index="index" :itemData="item" @handleClick="handleChangeActiveItem"/>
     </ul>
   </nav>

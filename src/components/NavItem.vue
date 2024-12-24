@@ -25,8 +25,8 @@ const classes = computed(() => {
 
 </script>
 <template>
-  <li class="relative grid place-items-center cursor-pointer hover:opacity-100 transition-opacity duration-300" :class="classes" @click="handleClick">
-    <Icon :icon="props.itemData.icon" />
+  <li class="relative grid place-items-center gap-1 cursor-pointer hover:opacity-100 transition-opacity duration-300" :class="classes" @click="handleClick">
+    <Icon :icon="props.itemData.icon" style="font-size: 1.25rem" />
     <span>{{ props.itemData.text }}</span>
   </li>
 </template>
